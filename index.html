@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleg Yaroshevych</title>
+    <style>
+        /* Variables */
+        :root {
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #cc0000;
+            --secondary-color: #666666;
+            --border-color: #eeeeee;
+        }
+
+        /* Base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 4rem 1rem;
+            max-width: 650px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Header section */
+        header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Profile picture */
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 2rem;
+        }
+
+        /* Name styling */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+            letter-spacing: -0.03em;
+        }
+
+        /* Links */
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+            font-size: 1.1rem;
+        }
+
+        a:hover {
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        /* Responsive design */
+        @media (max-width: 700px) {
+            body {
+                padding: 2rem 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-pic {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./oleg.jpg" alt="Oleg Yaroshevych" class="profile-pic">
+        <h1>Oleg Yaroshevych</h1>
+        <a href="https://linkedin.com/in/yaroshevych">LinkedIn</a>
+    </header>
+</body>
+</html>
